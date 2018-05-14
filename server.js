@@ -92,10 +92,10 @@ app.get('/pagecount', function (req, res) {
   }
 });
 
-app.get('/upload', function (req, res) {
+app.post('/upload', function (req, res) {
   // try to initialize the db on every request if it's not already
   // initialized.
-  res.send('{ Uploaded: -1 }');
+  res.send('{ Upload: File not uploaded }');
 });
 
 // error handling
